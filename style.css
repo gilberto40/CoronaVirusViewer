@@ -1,0 +1,31 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+._rows{
+    font-size:22px;
+
+}
+
+#boton{
+    font-size: 27px;
+    
+}
+
+._prom{
+    height: 170px;
+}
+
+@media (min-width: 576px) { 
+
+ }
+
+
+@media (min-width: 768px) { 
+
+ }
+
+
+@media (min-width: 992px) { 
+
+ }
+

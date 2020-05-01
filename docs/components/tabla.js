@@ -1,7 +1,7 @@
 Vue.component('tabla',{
     template: /*html*/`
     <div>
-    <h1 class="col-12 text-center">COVID-19 VIEWER</h1><button @click="ObtenerInfo">Do it </button>
+    <h1 class="col-12 text-center">COVID-19 VIEWER</h1>
         <div class="d-flex col-12">
         <table class="table col-7 mx-auto mt-2">
             <thead class="thead-dark">
@@ -42,6 +42,9 @@ Vue.component('tabla',{
             paisEnUso:''
         }
     },
+    mounted(){
+        this.ObtenerInfo()
+    },
     computed:{
         ...Vuex.mapState(['paisesMostrar', 'global', 'fields']),
 
@@ -51,4 +54,5 @@ Vue.component('tabla',{
         ...Vuex.mapActions(['ObtenerInfo'])
         
     }
+    
 })
